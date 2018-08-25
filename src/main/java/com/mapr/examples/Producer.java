@@ -58,7 +58,7 @@ public class Producer {
 	}
 
 	public static JSONObject readJsonFromUrl() throws IOException, JSONException {
-		InputStream is = new URL("http://data.fixer.io/api/latest?access_key=97736f4ca882ac5ca472e708507c96e3").openStream();
+		InputStream is = new URL("").openStream();
 		try {
 			BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
 			String jsonText = readAll(rd);
